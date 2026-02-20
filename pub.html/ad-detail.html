@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Details - Pawn Your Bike</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-motorcycle"></i>
+          <span>PawnYourBike</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="post-ad.html">Post Ad</a></li>
+          <li><a href="my-ads.html">My Ads</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="auth-section scroll-fade">
+    <div class="container" style="max-width:1000px;">
+      <div class="ads-grid" style="grid-template-columns:2fr 1.3fr;gap:2rem;">
+        <!-- Left: bike details -->
+        <div class="scroll-fade">
+          <img src="../rc.jpg" alt="Royal Enfield" style="width:100%;border-radius:18px;object-fit:cover;margin-bottom:1.5rem;">
+          <h2>Royal Enfield Classic 350</h2>
+          <p style="margin:0.5rem 0 1rem;color:#555;">Well-maintained bike with single owner, full insurance and timely service. Perfect for long rides and daily use.</p>
+
+          <h3 style="margin-bottom:0.5rem;">Details</h3>
+          <ul class="popup-details">
+            <li>Year: 2021</li>
+            <li>Kilometers: 15,000 km</li>
+            <li>Fuel: Petrol</li>
+            <li>Ownership: First Owner</li>
+            <li>Location: Hyderabad, Kukatpally</li>
+          </ul>
+
+          <h3 style="margin-top:1.5rem;margin-bottom:0.5rem;">Description</h3>
+          <p style="color:#555;">
+            Bike is in excellent condition, no accidental history, all services done at authorized service center.
+            Test ride available for serious buyers. Price slightly negotiable.
+          </p>
+        </div>
+
+        <!-- Right: price & contact -->
+        <div class="scroll-fade">
+          <div class="auth-form" style="box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+            <h2 style="margin-bottom:0.5rem;">₹1,25,000</h2>
+            <p style="margin-bottom:1rem;color:#666;"><i class="fas fa-map-marker-alt"></i> Hyderabad, Kukatpally</p>
+            <p style="margin-bottom:1rem;font-size:0.95rem;color:#777;"><i class="fas fa-clock"></i> Posted 2 hours ago</p>
+
+            <hr style="border:none;border-top:1px solid #eee;margin:1rem 0;">
+
+            <h3 style="margin-bottom:0.5rem;font-size:1.1rem;">Seller Details</h3>
+            <p style="margin-bottom:0.25rem;"><i class="fas fa-user"></i> Rakesh Kumar</p>
+            <p style="margin-bottom:1rem;"><i class="fas fa-phone-alt"></i> +91-98765 43210</p>
+
+            <button class="btn btn-primary full-width" style="margin-bottom:0.5rem;">Call Seller</button>
+            <button class="btn btn-secondary full-width" style="border-color:#667eea;color:#667eea;background:white;">Chat with Seller</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../script.js"></script>
+</body>
+</html>

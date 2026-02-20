@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Ads - Pawn Your Bike</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-motorcycle"></i>
+          <span>PawnYourBike</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="post-ad.html">Post Ad</a></li>
+          <li><a href="my-ads.html" class="active">My Ads</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="auth-section scroll-fade">
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:1.5rem;">My Ads</h2>
+      <div class="ads-grid">
+        <!-- Ad 1 -->
+        <div class="ad-card scroll-fade">
+          <img src="../rc.jpg" alt="My Bike">
+          <div class="ad-info">
+            <h3>Honda Hornet 160R</h3>
+            <div class="ad-price">₹85,000</div>
+            <div class="ad-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Kukatpally</span>
+              <span><i class="fas fa-clock"></i> Active</span>
+            </div>
+            <div style="margin-top:0.75rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <a href="ad-detail.html" class="btn btn-secondary" style="padding:8px 14px;font-size:0.9rem;">View</a>
+              <button class="btn btn-primary" style="padding:8px 14px;font-size:0.9rem;">Edit</button>
+              <button class="btn btn-secondary" style="padding:8px 14px;font-size:0.9rem;background:#f3f4f6;color:#333;border-color:#ddd;">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ad 2 - sample -->
+        <div class="ad-card scroll-fade">
+          <img src="../OIP.webp" alt="My Bike 2">
+          <div class="ad-info">
+            <h3>Bajaj Pulsar 150</h3>
+            <div class="ad-price">₹65,000</div>
+            <div class="ad-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+              <span><i class="fas fa-clock"></i> Pending</span>
+            </div>
+            <div style="margin-top:0.75rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <a href="ad-detail.html" class="btn btn-secondary" style="padding:8px 14px;font-size:0.9rem;">View</a>
+              <button class="btn btn-primary" style="padding:8px 14px;font-size:0.9rem;">Edit</button>
+              <button class="btn btn-secondary" style="padding:8px 14px;font-size:0.9rem;background:#f3f4f6;color:#333;border-color:#ddd;">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- If no ads, you can later show a message instead -->
+    </div>
+  </section>
+
+  <script src="../script.js"></script>
+</body>
+</html>

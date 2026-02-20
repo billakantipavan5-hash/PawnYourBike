@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Ad - Pawn Your Bike</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-motorcycle"></i>
+          <span>PawnYourBike</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="post-ad.html" class="active">Post Ad</a></li>
+          <li><a href="my-ads.html">My Ads</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="auth-section scroll-fade">
+    <div class="container">
+      <div class="auth-form">
+        <h2>Post Your Bike Ad</h2>
+        <form>
+          <div class="form-group">
+            <i class="fas fa-heading"></i>
+            <input type="text" placeholder="Ad Title (e.g. Royal Enfield Classic 350)" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-motorcycle"></i>
+            <input type="text" placeholder="Brand & Model" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="number" placeholder="Year" min="1990" max="2026" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-tachometer-alt"></i>
+            <input type="number" placeholder="Kilometers Driven" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-rupee-sign"></i>
+            <input type="number" placeholder="Expected Price (₹)" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Location (City / Area)" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-list"></i>
+            <select required>
+              <option value="">Select Category</option>
+              <option>Two Wheelers</option>
+              <option>Accessories</option>
+              <option>Services</option>
+              <option>Pawn Deals</option>
+            </select>
+          </div>
+          <div class="form-group" style="align-items:flex-start">
+            <i class="fas fa-align-left" style="margin-top:4px;"></i>
+            <textarea rows="4" placeholder="Description" style="border:none;outline:none;background:transparent;width:100%;resize:vertical;" required></textarea>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-image"></i>
+            <input type="file" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Submit Ad</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="../script.js"></script>
+</body>
+</html>

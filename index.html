@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawn Your Bike - Sell, Buy & Pawn Bikes Instantly</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-motorcycle"></i>
+          <span>PawnYourBike</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="./pub.html/post-ad.html">Post Ad</a></li>
+          <li><a href="./pub.html/login.html">Login</a></li>
+          <li><a href="./pub.html/register.html">Register</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="slideshow-container">
+  <div class="slide active">
+    <img src="trust.jpeg" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="money.jpeg" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="belive.jpeg" alt="Image 3">
+  </div>
+
+  <!-- Arrows -->
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+
+<!-- Dots -->
+<div class="dots-container">
+  <span class="dot active-dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+  <!-- Hero Section -->
+  <section class="hero scroll-fade">
+    <div class="hero-content">
+      <h1>Pawn Your Bike Instantly</h1>
+      <p>Get instant cash for your bike or find great deals on used bikes</p>
+      <div class="hero-buttons">
+        <a href="./pub.html/post-ad.html" class="btn btn-primary">Post Your Bike</a>
+        <a href="#search" class="btn btn-secondary">Browse Bikes</a>
+      </div>
+    </div>
+    <div class="hero-search" id="search">
+      <div class="search-box">
+        <input type="text" placeholder="Search bikes by brand, model..." >
+        <!-- <select> -->
+          <!-- <option>Location</option> -->
+          <!-- <option>Hyderabad</option> -->
+          <!-- <option>khammam</option> -->
+          <!-- <option>warangal</option> -->
+        </select>
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="categories scroll-fade">
+    <div class="container">
+      <h2>Browse by Category</h2>
+      <div class="category-grid">
+        <div class="category-card scroll-fade" data-open-popup="categoryPopup">
+          <i class="fas fa-motorcycle"></i>
+          <h3>Two Wheelers</h3>
+          <p>Bikes & Scooters</p>
+        </div>
+        <div class="category-card scroll-fade" data-open-popup="categoryPopup">
+          <i class="fas fa-hard-hat"></i>
+          <h3>Accessories</h3>
+          <p>Helmets & Parts</p>
+        </div>
+        <div class="category-card scroll-fade" data-open-popup="categoryPopup">
+          <i class="fas fa-tools"></i>
+          <h3>Services</h3>
+          <p>Repair & Maintenance</p>
+        </div>
+        <div class="category-card scroll-fade" data-open-popup="categoryPopup">
+          <i class="fas fa-hand-holding-usd"></i>
+          <h3>Pawn Deals</h3>
+          <p>Quick Cash Offers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Ads -->
+  <section id="featured" class="featured scroll-fade">
+    <div class="container">
+      <h2>Featured Bikes</h2>
+      <div class="ads-grid">
+        <div class="ad-card scroll-fade">
+          <img src="rc.jpg"Royal Enfield">
+          <div class="ad-info">
+            <h3>Royal Enfield Classic 350</h3>
+            <div class="ad-price">₹1,25,000</div>
+            <div class="ad-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+              <span><i class="fas fa-clock"></i> 2 hours ago</span>
+            </div>
+            <button class="btn btn-secondary btn-quick-view" data-open-popup="bikePopup">
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="ad-card scroll-fade">
+          <img src="OIP.webp"Royal Enfield">
+          <div class="ad-info">
+            <h3>Pulsor 220f</h3>
+            <div class="ad-price">₹70,000</div>
+            <div class="ad-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+              <span><i class="fas fa-clock"></i> 2 hours ago</span>
+            </div>
+            <button class="btn btn-secondary btn-quick-view" data-open-popup="bikePopup">
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="ad-card scroll-fade">
+          <img src="shine.jpg"Royal Enfield">
+          <div class="ad-info">
+            <h3>Shine 125cc</h3>
+            <div class="ad-price">₹40,000</div>
+            <div class="ad-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+              <span><i class="fas fa-clock"></i> 2 hours ago</span>
+            </div>
+            <button class="btn btn-secondary btn-quick-view" data-open-popup="bikePopup">
+              Quick View
+            </button>
+          </div>
+        </div>
+        <!-- Add more ad-cards here if you want -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer scroll-fade">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>PawnYourBike</h3>
+          <p>India's #1 platform for buying, selling and pawning bikes.
+            <br>Desinged by billakanti pavankumar
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">
+              <li>About Us </li> <li>contact us</li> trust us </a></li>
+ 
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PawnYourBike. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay and Popups -->
+  <div class="overlay" id="globalOverlay"></div>
+
+  <!-- Quick View Bike Popup -->
+  <div class="popup" id="bikePopup">
+    <div class="popup-content">
+      <span class="popup-close" data-close-popup="bikePopup">&times;</span>
+      <h2>Royal Enfield Classic 350</h2>
+      <p>Well-maintained, single owner, comprehensive insurance, excellent condition.</p>
+      <ul class="popup-details">
+        <li>Year: 2021</li>
+        <li>Kilometers: 15,000 km</li>
+        <li>Location: Hyderabad</li>
+        <li>Expected Price: ₹1,25,000</li>
+      </ul>
+      <button class="btn btn-primary full-width">Contact Seller</button>
+    </div>
+  </div>
+
+  <!-- Category Info Popup -->
+  <div class="popup" id="categoryPopup">
+    <div class="popup-content">
+      <span class="popup-close" data-close-popup="categoryPopup">&times;</span>
+      <h2>Browse Premium Bike Deals</h2>
+      <p>Filter by brand, price, location and get the best pawn or buy offers instantly.</p>
+      <button class="btn btn-secondary full-width" data-close-popup="categoryPopup">Got it</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
